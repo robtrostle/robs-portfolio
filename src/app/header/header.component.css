@@ -1,0 +1,37 @@
+a,
+a:visited,
+a:hover {
+  color: white;
+  text-decoration: none;
+  margin: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+}
+
+a:hover {
+  color: whitesmoke;
+}
+
+.toolbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+  }
+  #home{
+      padding-right: 5px;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .spacer {
+    flex: 1;
+  }

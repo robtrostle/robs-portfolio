@@ -1,0 +1,38 @@
+.hello{
+    font-family: 'Bodoni';
+    margin-left: 10rem;
+    font-size: 100px;
+    margin-top: 60px;
+    display: flex;
+  }
+
+  .content {
+    display: flex;
+    margin: 0px;
+    padding: 10px;
+    max-width: 100%;
+    height: 40vh;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+  }
+  .mat-grid-list{
+    display: flex;
+      background-color: black;
+  }
+
+  .mat-toolbar-row{
+    display: flex;
+      background-color: antiquewhite;
+  }
+  .intro{
+      color: azure;
+      display: flex;
+      margin-left: 160px;
+      font-family: book;
+      font-size: larger;
+  }
+
+  
+
+  

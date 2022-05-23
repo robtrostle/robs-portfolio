@@ -1,0 +1,65 @@
+.hidden {
+	display: none
+}
+.visible {
+	display: block
+}
+.center-text {
+	text-align: center
+}
+
+form.contact {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 1000px;
+	max-width: 500px;
+	width: 100%;
+	border-radius: 0.5rem;
+	min-height: 300px;
+}
+input,
+button {
+	margin-bottom: 10px;
+}
+button {
+	margin-top: 10px;
+	background-color: rgb(74, 192, 231);
+	color: black;
+	border: 1px solid black;
+	padding: 4px 16px;
+	transition: 0.4s;
+	width: 100%;
+}
+button:hover:enabled{
+	color: rgb(62, 3, 3);
+	background-color: rgb(150, 233, 26);
+}
+
+body{
+	background-color: rgb(176, 171, 171);
+}
+
+.container{
+	padding: 20px;
+}
+
+span{
+	color:green;
+}
+.col{
+	margin: auto;
+    width: 20%;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
