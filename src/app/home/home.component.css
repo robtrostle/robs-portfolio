@@ -4,6 +4,9 @@
     font-size: 100px;
     margin-top: 60px;
     display: flex;
+    width: auto;
+    word-wrap: break-word;
+    
   }
 
   .content {
@@ -15,15 +18,18 @@
     flex-direction: column;
     background-color: black;
     color: white;
+    width: auto;
   }
   .mat-grid-list{
     display: flex;
       background-color: black;
+      width: auto;
   }
 
   .mat-toolbar-row{
     display: flex;
       background-color: antiquewhite;
+      width: auto;
   }
   .intro{
       color: azure;
@@ -31,7 +37,9 @@
       margin-left: 160px;
       font-family: book;
       font-size: larger;
-      
+      width: auto;
+
+
   }
 
 
