@@ -24,6 +24,7 @@ a:hover {
     color: white;
     font-weight: 600;
     width: auto;
+    background-image: var(--bs-gradient);
   }
 
   .spacer {
