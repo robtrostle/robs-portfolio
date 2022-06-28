@@ -1,15 +1,37 @@
 
-<mat-card-content>
-<div class="content" role="main">
-    <p class="hello">Hello.</p>
-      <mat-card-content class="hello">
-      I'm </mat-card-content>
-      <mat-card-content class="hello">Rob <br><br><br></mat-card-content> 
-    
-      <span class="intro">A full stack developer<br>
-      Check out some of my projects below <br></span>
-</div>
-</mat-card-content>
+  <!-- <div class="card" id="card1">
+    <div class="card-body">
+      Hello!
+    </div>
+  </div>
+  <div class="card" id="2">
+    <div class="card-body">
+      I'm Rob, a full stack developer
+    </div>
+  </div>
+  <div class="card" id="3">
+    <div class="card-body">
+      Check out some of my projects
+    </div>
+  </div> -->
+
+  <div class="card">
+    <div class="card-body">
+      <h1 class="card-title">Hello.</h1>
+      <h2 class="card-text">I'm Rob Trostle, a full stack developer</h2>
+      
+    </div>
+    <ul class="list-group list-group-flush">
+      
+      <li class="list-group-item"><i class="bi bi-star"></i> I currently work for PNC Financial Services</li>
+      <li class="list-group-item"><i class="bi bi-star"></i> I have 1 year experience as a Quality Engineer</li>
+      <li class="list-group-item"><i class="bi bi-star"></i> I started as a full stack developer in March 2022</li>
+      <li class="list-group-item"><i class="bi bi-star"></i> I live and work remotely in Jacksonville, FL</li>
+    </ul>
+    <div class="card-body">
+      <h3 class="card-link">Check out some of my projects below</h3>
+    </div>
+  </div>
   
   <mat-grid-list  gutterSize=10px cols="2" rowHeight="2:1">
     <mat-grid-tile>
@@ -19,7 +41,9 @@
     </mat-grid-tile>
   
     <mat-grid-tile>
-      <img src="https://imageio.forbes.com/blogs-images/startswithabang/files/2017/04/0-hyIRTtnKjt38mIgq-.jpg?format=jpg&width=1200" alt="">
+      <a target="_blank" href="https://github.com/Oceans-Four">
+      <img src="assets/Crypto.gif" alt="Link to Crypto Watcher">
+      </a>
     </mat-grid-tile>
   
     <mat-grid-tile>
@@ -29,6 +53,9 @@
     </mat-grid-tile>
   
     <mat-grid-tile>
-      <img src="https://media-exp1.licdn.com/dms/image/C561BAQE71el7o3R8Jw/company-background_10000/0/1569100895203?e=2147483647&v=beta&t=_IinfqK6f9WgB-nEZ43wO8XAQL3gclr6uWMRE91fTH4" alt="">
+      <a target="_blank" href="https://github.com/robtrostle/JDBC_phpMyAdmin_MySQL_DBproject">
+      <img src="assets/Fantasy.gif" alt="Link to Fantasy Football tracker repo">
+      </a>
     </mat-grid-tile>
+
   </mat-grid-list>
