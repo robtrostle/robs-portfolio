@@ -38,10 +38,13 @@
     color:rgb(244, 211, 169);
   }
 
-  h3{
+  h2{
     font-family: roboto;
+    font-size: 150%;
+    
   }
   h1{
+    font-size: 300%;
     font-family: roboto;
   }
 
