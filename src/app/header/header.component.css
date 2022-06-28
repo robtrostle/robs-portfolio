@@ -25,10 +25,11 @@ a:hover {
     font-weight: 600;
     width: auto;
   }
-  #home{
-      padding-right: 5px;
-  }
 
   .spacer {
     flex: 1;
+  }
+
+  mat-icon{
+    font-size: 200%;
   }
