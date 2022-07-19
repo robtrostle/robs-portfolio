@@ -6,9 +6,9 @@
       height: auto;
       bottom: 0px;
       position:relative;
+      justify-content: center;
   }
-
-
+  
   .card {
     background-color: rgb(209, 204, 204);
     width: auto;
@@ -41,17 +41,31 @@
   h2{
     font-family: roboto;
     font-size: 150%;
-    
   }
+
   h1{
     font-size: 300%;
     font-family: roboto;
   }
 
   img{
-    width: 75%;
+    width: 100%;
     height: auto;
   }
+
+  .mat-grid-tile .mat-grid-tile-header{
+    text-align: center;
+    height: 28px;
+    font-size: 130%;
+    color: rgb(3, 251, 11);
+    font-weight: 800;
+    font-family: Lucida Console;
+    background-color: transparent;
+    align-items: top;
+    justify-content: center;
+    opacity: 0.6;
+  }
+
 
 
 
