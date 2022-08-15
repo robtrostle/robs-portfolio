@@ -16,6 +16,8 @@ import { HeaderComponent } from './header/header.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { HighlightDirective } from './highlight.directive';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
 
 
@@ -27,7 +29,9 @@ import { HighlightDirective } from './highlight.directive';
     ContactComponent,
     HomeComponent,
     HeaderComponent,
-    HighlightDirective
+    HighlightDirective,
+    ContactUsComponent,
+    
   ],
   imports: [
     BrowserModule,
