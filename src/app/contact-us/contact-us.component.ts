@@ -28,7 +28,5 @@ export class ContactUsComponent {
         console.log(error.text);
         this.submitted = true;
       });
-			this.submitted = true; // show the response message
-      
   }
 }
