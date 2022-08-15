@@ -16,7 +16,7 @@ export class ContactUsComponent {
   }
 
   public sendEmail(e: Event) {
-    // e.preventDefault();
+    e.preventDefault();
     emailjs.sendForm('service_q2ebzhh', 'template_fitzo4o', e.target as HTMLFormElement, '8Y8mijfAsd_l9PrQW')
       .then((result: EmailJSResponseStatus) => {
         this.responseMessage = "Thanks for the message! I'll get back to you soon!";
