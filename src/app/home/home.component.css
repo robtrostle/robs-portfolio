@@ -1,6 +1,6 @@
 
   .mat-grid-list{
-    display: flex;
+      display: flex;
       background-color: black;
       width: auto;
       height: auto;
@@ -17,6 +17,13 @@
     color: white;
     display: flex;
     font-family: book;
+}
+.card-title{
+  font-family: 'Pricedown';
+  font-style: normal;
+  font-weight: normal;
+  color: rgb(247, 244, 244);
+  src: local('pricedown'), url('https://github.com/infin1tyy/pricedown-font-web/blob/master/pricedown.otf') format('opentype');
 }
 
   #card1{
