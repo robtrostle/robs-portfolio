@@ -1,7 +1,7 @@
 a,
 a:visited,
 a:hover {
-  color: white;
+  color: rgb(102, 239, 16);
   text-decoration: none;
   margin: .5rem;
   font-family: 'Courier New', Courier, monospace;
@@ -29,4 +29,16 @@ a:hover {
 
   .spacer {
     flex: 1;
+  }
+
+  @media only screen and (max-width: 991px){
+  	
+    .mobile{
+        display: block;
+    }
+    a{
+      font-size: .85rem;
+      
+    }
+
   }
