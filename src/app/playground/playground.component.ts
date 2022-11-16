@@ -12,4 +12,6 @@ export class PlaygroundComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  notifications: number = 5;
+
 }

@@ -1,1 +1,44 @@
-<p>playground works!</p>
+<div class="main">
+    <div>
+        <button mat-raised-button>Hi!</button>
+        <button mat-flat-button>Holla!</button>
+        <button mat-stroked-button>Hallo!</button>
+        <button color="warn" mat-fab>Hej!</button>
+    </div>
+
+    <div>
+        <button color="accent" mat-icon-button>Hi!</button>
+        <button mat-fab>Holla!</button>
+        <button mat-mini-fab>Hallo!</button>
+    </div>
+
+    <div>
+        <button color="primary" mat-raised-button>Primary</button>
+        <button color="accent" mat-fab>Accent</button>
+        <button color="warn" mat-raised-button>Warn!</button>
+    </div>
+
+    <div>
+        <mat-icon>paid</mat-icon>
+        <mat-icon color="primary">thumb_up</mat-icon>
+        <mat-icon color="accent">lightbulb</mat-icon>
+    </div>
+
+    <div class="badges">
+        <span matBadge="17" 
+        matBadgeOverlap="false" 
+        matBadgePosition="below before" 
+        matBadgeSize="small"
+        >Notifications</span>
+    </div>
+
+    <div class="badges">
+        <span [matBadge]="notifications" 
+        matBadgeOverlap="false" 
+        matBadgeSize="small" 
+        matBadgeColor="warn"
+        [matBadgeHidden]="notifications < 1"
+        >Notifications</span>
+    </div>
+
+</div>

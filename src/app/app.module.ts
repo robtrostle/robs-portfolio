@@ -17,6 +17,7 @@ import { MatCardModule } from '@angular/material/card';
 import { HighlightDirective } from './highlight.directive';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { PlaygroundComponent } from './playground/playground.component';
+import { MatBadgeModule } from '@angular/material/badge';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { PlaygroundComponent } from './playground/playground.component';
     MatInputModule,
     AppRoutingModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
