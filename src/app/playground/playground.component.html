@@ -1,19 +1,28 @@
 <div class="main">
+    
     <div>
-        <button mat-raised-button>Hi!</button>
-        <button mat-flat-button>Holla!</button>
-        <button mat-stroked-button>Hallo!</button>
-        <button color="warn" mat-fab>Hej!</button>
+        <mat-spinner *ngIf="showSpinner" color="accent"></mat-spinner>
+        <button mat-raised-button (click)="loadData()">Spinner</button>
+        <button mat-stroked-button>Stroked</button>
+        <button color="warn" mat-fab>Fab!</button>
     </div>
 
-    <div>
-        <button color="accent" mat-icon-button>Hi!</button>
-        <button mat-fab>Holla!</button>
-        <button mat-mini-fab>Hallo!</button>
-    </div>
 
     <div>
-        <button color="primary" mat-raised-button>Primary</button>
+        <mat-menu #appMenu="matMenu" xPosition="after">
+            <button  mat-menu-item routerLink="/">Go Home</button>
+            <button  mat-menu-item [matMenuTriggerFor]="subMenu">Sub Menu</button>
+        </mat-menu>
+        <button mat-flat-button 
+        [matMenuTriggerFor]="appMenu"
+        color="primary">Open Menu</button>
+
+        <mat-menu #subMenu="matMenu">
+            <button  mat-menu-item>Angular</button>
+            <button  mat-menu-item>React</button>
+            <button  mat-menu-item>Vue</button>
+        </mat-menu>
+        
         <button color="accent" mat-fab>Accent</button>
         <button color="warn" mat-raised-button>Warn!</button>
     </div>
@@ -40,5 +49,74 @@
         [matBadgeHidden]="notifications < 1"
         >Notifications</span>
     </div>
+
+    <mat-progress-spinner diameter="25" value="70"></mat-progress-spinner>
+    <mat-spinner color="accent" diameter="40"></mat-spinner>
+    <mat-spinner 
+    *ngIf="showSpinner"
+    diameter="150"></mat-spinner>
+    
+
+    
+    <mat-sidenav-container>
+        <mat-sidenav
+        #sidenav
+        [(opened)]="opened"
+        mode="side">
+        Peakaboo!
+        <mat-nav-list dense>
+            <a mat-list-item routerLink="/">Home</a>
+            <a mat-list-item routerLink="/contact">Contact</a>
+            <a mat-list-item routerLink="/">Home yet again</a>
+        </mat-nav-list>
+    </mat-sidenav>
+        <mat-sidenav-content>
+            <button mat-raised-button (click)="sidenav.open()">Open</button>
+            <button mat-raised-button (click)="sidenav.close()">Close</button>
+            <button mat-fab color="accent" (click)="sidenav.toggle()">Toggle</button>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+
+    <mat-list>
+        <mat-list-item>
+            <mat-icon matListIcon>home</mat-icon>
+            <h1 matLine>List</h1>
+            <p matLine>Line 1</p>
+            <p matLine>Line 2</p>
+        </mat-list-item>
+
+        <mat-divider></mat-divider>
+
+        <mat-list-item>
+            <mat-icon matListIcon>star</mat-icon>
+            <h3 matLine>List</h3>
+            <p matLine>Line 2</p>
+        </mat-list-item>
+    </mat-list>
+
+    <mat-divider></mat-divider>
+
+    <mat-list>
+        <mat-list-item>
+            <mat-icon matListIcon>folder</mat-icon>
+            <h3 matLine>List</h3>
+            <p matLine>Line 3</p>
+        </mat-list-item>
+
+        <mat-divider></mat-divider>
+
+        <mat-list-item>
+            <mat-icon matListIcon>laptop</mat-icon>
+            <h3 matLine>List</h3>
+            <p matLine>Line 4</p>
+        </mat-list-item>
+    </mat-list>
+    <mat-divider></mat-divider>
+
+    <mat-grid-list cols="2" rowHeight="6:1" gutterSize=".75rem">
+        <mat-grid-tile rowspan="2">Tile 1</mat-grid-tile>
+        <mat-grid-tile>Tile 2</mat-grid-tile>
+        <mat-grid-tile>Tile 3</mat-grid-tile>
+    </mat-grid-list>
 
 </div>

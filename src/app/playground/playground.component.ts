@@ -13,5 +13,14 @@ export class PlaygroundComponent implements OnInit {
   }
 
   notifications: number = 5;
+  showSpinner: boolean = false;
+  opened: boolean = false;
+
+  loadData(){
+    this.showSpinner = true;
+    setTimeout(() => {
+      this.showSpinner = false;
+    }, 3000)
+  }
 
 }
