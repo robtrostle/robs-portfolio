@@ -10,7 +10,6 @@
   }
   
   .card {
-    background-color: rgb(209, 204, 204);
     width: auto;
     height: auto;
     background-color: rgb(0, 0, 0);
@@ -19,11 +18,9 @@
     font-family: book;
 }
 .card-title{
-  font-family: 'Pricedown';
   font-style: normal;
   font-weight: normal;
   color: rgb(247, 244, 244);
-  src: local('pricedown'), url('https://github.com/infin1tyy/pricedown-font-web/blob/master/pricedown.otf') format('opentype');
 }
 
   #card1{
@@ -77,4 +74,6 @@
     color:#FFA300;
     text-align: center;
   }
+
+  mat-grid-list{background-color: aquamarine;}
 

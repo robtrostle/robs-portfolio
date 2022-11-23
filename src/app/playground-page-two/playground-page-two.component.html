@@ -1,0 +1,61 @@
+<div class="main">
+    <mat-tab-group #tabRef (selectedTabChange)="logChange(tabRef.selectedIndex)">
+       <mat-tab label="Cards">
+        <mat-card>
+            <mat-card-title>
+                Card
+            </mat-card-title>
+            <mat-card-content>
+                This is card content
+            </mat-card-content>
+            <mat-card-actions align="start">
+                <button  color="warn" mat-raised-button>Login</button>
+            </mat-card-actions>
+        </mat-card>
+       </mat-tab> 
+
+
+       <mat-tab label="Stepper">
+
+        <mat-horizontal-stepper>
+            <mat-step label="Shipping Address">
+                <p>Shipping Address Details</p>
+                <div>
+                    <button color="accent" mat-flat-button matStepperNext>Next</button>
+                </div>
+            </mat-step>
+            <mat-step label="Billing Address">
+                <p>Billing Address Details</p>
+                <div>
+                    <button color="primary" mat-flat-button matStepperPrevious>Back</button>
+                    <button color="accent" mat-flat-button matStepperNext>Next</button>
+                </div>
+            </mat-step>
+            <mat-step label="Place Order">
+                <p>Order Details</p>
+                <div>
+                    <button color="primary" mat-flat-button matStepperPrevious>Back</button>
+                </div>
+            </mat-step>
+        </mat-horizontal-stepper>
+       </mat-tab>
+
+       <mat-tab label="Date Picker">
+        <mat-form-field>
+            <input matInput [matDatepicker]="myDatePicker" [min]="minDate" [max]="maxDate"
+            (dateInput)="addEvent('input', $event)" 
+            (dateChange)="addEvent('change', $event)">
+            <mat-datepicker-toggle [for]="myDatePicker" matSuffix></mat-datepicker-toggle>
+            <mat-datepicker #myDatePicker startView="multi-year"></mat-datepicker>
+        </mat-form-field>
+       </mat-tab>
+       
+       
+       <mat-tab label="Snack Bar">
+        <button color="warn" mat-raised-button (click)="openSnackBar('Item Deleted', 'Undo')">
+            Delete
+        </button>
+       </mat-tab> 
+       <mat-tab label="3">Date Picker</mat-tab> 
+    </mat-tab-group>
+</div>

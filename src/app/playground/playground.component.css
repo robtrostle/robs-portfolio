@@ -4,6 +4,13 @@
     height: auto;
     background:rgba(250, 247, 247, 0.5);
 }
+a {
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+}
 
 mat-sidenav-container {
     height: 15%;
@@ -34,4 +41,8 @@ mat-icon{
 
 mat-grid-tile{
     background-color: lightblue;
+}
+
+mat-expansion-panel{
+    background-color: beige;
 }

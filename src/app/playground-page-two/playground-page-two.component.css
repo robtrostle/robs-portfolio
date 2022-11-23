@@ -1,0 +1,11 @@
+.main {
+    padding:.5rem;
+    width: 100%;
+    height: auto;
+    background:rgba(250, 247, 247, 0.807);
+    min-height: 100vh;
+}
+mat-card {
+    max-width: 20rem;
+    width: 20rem;
+}

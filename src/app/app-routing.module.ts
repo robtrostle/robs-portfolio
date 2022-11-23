@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { PlaygroundComponent } from './playground/playground.component';
+import { PlaygroundPageTwoComponent } from './playground-page-two/playground-page-two.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'playground',
     component: PlaygroundComponent,
+  },
+  {
+    path: 'playground-page-two',
+    component: PlaygroundPageTwoComponent,
   },
   {
     path: '**',
