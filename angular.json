@@ -59,10 +59,18 @@
           },
           "configurations": {
             "production": {
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                    "minify": true,
+                    "inlineCritical": false
+                },
+                "fonts": true
+            },
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "700kb",
+                  "maximumWarning": "2mb",
                   "maximumError": "2mb"
                 },
                 {
@@ -95,6 +103,7 @@
           "configurations": {
             "production": {
               "browserTarget": "robs-portfolio:build:production"
+              
             },
             "development": {
               "browserTarget": "robs-portfolio:build:development"
