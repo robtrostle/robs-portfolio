@@ -1,9 +1,9 @@
 <header>
   <div class="toolbar" role="banner">
 
-  <a appHighlight routerLink="/">
+  <!-- <a appHighlight routerLink="/">
     <mat-icon aria-hidden="false" aria-label="home icon" id="home">home</mat-icon>
-  </a>
+  </a> -->
 
   <a appHighlight routerLink="/">
     Home
@@ -16,3 +16,18 @@
     <a appHighlight aria-label="Contact Rob" routerLink="/contact" >Contact</a>
  </div>
 </header>
+<p>
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Rob</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <a appHighlight aria-label="Playground" routerLink="/playground"><mat-icon>favorite</mat-icon></a>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+</p>

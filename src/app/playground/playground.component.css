@@ -1,48 +1,57 @@
-.main {
-    padding:.5rem;
-    width: 100%;
-    height: auto;
-    background:rgba(250, 247, 247, 0.5);
-}
-a {
-    color:black;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.6rem;
-    font-weight: bold;
-    text-decoration: none;
+/* Reset some default styling */
+body, h1, h2, h3, h4, ul {
+  margin: 0;
+  padding: 0;
 }
 
-mat-sidenav-container {
-    height: 15%;
-    background-color: chartreuse;
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-mat-side-nav, mat-sidenav-content {
-    padding: 16px;
-    background-color: blueviolet;
+.header {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-mat-sidenav {
-    background-color: lightcoral;
-    width: 200px;
+.info ul {
+  list-style: none;
+  padding-left: 0;
 }
 
-button {
-margin: 1rem 1rem 1rem 1rem;
-}
-mat-icon{
-    margin: 1rem;
-    color:rgb(2, 55, 55);
+.info li {
+  margin-bottom: 10px;
 }
 
-.badges{
-    margin:3rem;
+.projects {
+  margin-top: 40px;
 }
 
-mat-grid-tile{
-    background-color: lightblue;
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
 }
 
-mat-expansion-panel{
-    background-color: beige;
+.project {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project h4 {
+  margin-top: 10px;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 600px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
 }
